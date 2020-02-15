@@ -139,7 +139,7 @@ def imagesend():
 	data = request.files['imagen'].read()
 	foto_index = request.form["foto"]
 
-
+	contador()
 
 	filename = 'static/Faces/' + foto_index + '.jpg'  # I assume you have a way of picking unique filenames
 	with open(filename, 'wb') as f:
@@ -219,7 +219,7 @@ def acentos(cad):
 
 def estadisticas(nombre, apellido, edad, estado, municipio):
     # aprovechamos esta función para guardar los datos del usuario
-    guarda_datos_usuario(nombre)
+    gu
     df3=pd.read_csv('report_12_01_2018_2.csv')
     nombre = acentos(nombre)
     apellido = acentos(apellido)
@@ -241,14 +241,16 @@ def estadisticas(nombre, apellido, edad, estado, municipio):
 
     return res
     
-def guarda_datos_usuario(nombre):
-   datos_usuario = open('datos_usuario.txt','r')
-   text_datos = datos_usuario.read()
-   permanent_file = open('datos_usuarios/' + nombre + '.txt','w')
-   permanent_file.write(text_datos)
-   datos_usuario.close
+def contador():
+   contador = open('./contador.txt','r')
+   lineList = contador.readlines()
+   print(lineList)
+   last = lineList[len(lineList)-1]
+   counter = int(last) + 1
+   permanent_file = open('./contador.txt','w')
+   permanent_file.write(str(counter))
+   contador.close
    permanent_file.close
-   os.rename("/home/pi/Documents/instalacion/static/Faces/0.jpg", "/home/pi/Documents/instalacion/datos_usuarios/" + nombre + '.jpg')
    
    return 
    
