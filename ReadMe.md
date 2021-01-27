@@ -22,6 +22,8 @@ Cara a Cara funciona de la siguiente manera:
 
 En términos de hardware, el proyecto require de una Raspberry Pi, una pantalla y un teclado. 
 
+Para instalar las dependencias en el Raspberry Pi, corre en la terminal del RPi las líneas en el archvo manual.txt de este repositorio.
+
 
 
 # Referencias
