@@ -1,8 +1,8 @@
 # Cara a Cara (English)
 
-This is the repository for the Cara a Cara (Face to Face) art installation. 
+This is the repository for the Cara a Cara (Face to Face) installation. 
 
-This installation was developed by students at [Datalab ITAM](datalabitam.com), with support from NGO's [El Día Después](https://eldiadespues.mx/) and [Data Cívica](https://datacivica.org), and as a part of Rodolfo Ocampo undegradiuate thesis from ITAM. The installation was inspired by the installation "Level of Confidence" by Lozano-Hemmer. (https://www.lozano-hemmer.com/level_of_confidence.php) 
+This installation was developed by students at [Datalab ITAM](datalabitam.com), with support from NGO's [El Día Después](https://eldiadespues.mx/) and [Data Cívica](https://datacivica.org), and as a part of Rodolfo Ocampo undegraduate thesis from ITAM. The installation was inspired by "Level of Confidence" by Lozano-Hemmer. (https://www.lozano-hemmer.com/level_of_confidence.php) 
 
 Through facual recognition, the installation brings the problem of mass dissapreance closer, by showing installation users a photo of the missing person that most resembles them, along with how many missing persons share their same age, name, and place of birth. This project is an experiment on the use of technology traditionally used for personalization, as a tool to bring users closer to a problem by leveraging the closer relationship they have: the relationship with themselves.
 
@@ -23,9 +23,13 @@ Students who worked in the installation are Rodolfo Ocampo, Javier Cors, Rodrigo
 
 The project requires a Raspberry Pi 4, a monitor and Raspberry Pi 4 camera. 
 
-To replicate this installation, you need to install the dependencies in the manual.txt file, and then clone this repository, and start a flask server with the following name: 
+To replicate this installation, you need to install the dependencies in the manual.txt file, and then clone this repository, and start a flask server by typing this in the terminal:
 
-
+```
+export FLASK_APP=index.py
+flask run
+```
+The project should now open in your browser in localhost.
 
 # Cara a Cara (Español)
 
@@ -51,7 +55,14 @@ Cara a Cara funciona de la siguiente manera:
 
 En términos de hardware, el proyecto require de una Raspberry Pi, una pantalla y un teclado. 
 
-Para instalar las dependencias en el Raspberry Pi, corre en la terminal del RPi las líneas en el archvo manual.txt de este repositorio.
+Para instalar este proyecto, instala las dependencias en el Raspberry Pi, corriendo en la terminal las líneas en el archvo manual.txt de este repositorio y luego los siguiente para iniciar un servidor de flask: 
+
+```
+export FLASK_APP=index.py
+flask run
+```
+
+La aplicación se abrirá en tu navegador.
 
 Los estudiantes que participaron en este proyecto son: Rodolfo Ocampo, Javier Cors, Rodrigo Calderón, Jerónimo Aranda, Fernacisco Velasquez and Jose Javier Villicaña
 # Referencias útiles
