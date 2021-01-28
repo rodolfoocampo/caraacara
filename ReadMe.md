@@ -1,6 +1,36 @@
-# Cara a Cara
+# Cara a Cara (English)
+
+This is the repository for the Cara a Cara (Face to Face) art installation. 
+
+This installation was developed by students at [Datalab ITAM](datalabitam.com), with support from NGO's [El Día Después](https://eldiadespues.mx/) and [Data Cívica](https://datacivica.org), and as a part of Rodolfo Ocampo undegradiuate thesis from ITAM. The installation was inspired by the installation "Level of Confidence" by Lozano-Hemmer. (https://www.lozano-hemmer.com/level_of_confidence.php) 
+
+Through facual recognition, the installation brings the problem of mass dissapreance closer, by showing installation users a photo of the missing person that most resembles them, along with how many missing persons share their same age, name, and place of birth. This project is an experiment on the use of technology traditionally used for personalization, as a tool to bring users closer to a problem by leveraging the closer relationship they have: the relationship with themselves.
+
+Face to Face works through the following steps.
+
+1. The users steps in a cabin, where there is a camera and a screen. 
+2. The user takes a photo of her face and inputs data like name, age and place of birth.
+3. A neural networks obtains the most important components of the face and creates a reduced vector representation (embedding).
+4. The system compares the user's vector embedding with the missing people face embeddings. 
+5. The photo that is closest to the user's vector is picked as the closest one. 
+6. The users photo, and the photo of the missing person are put side by side for the user to see. 
+7. The user is then shown the number of people who have gone missing that share her name, age and place of birth. 
+8. The user is shown more information about what can be done about the problem, and encourage her to participate in political actions to demand solutions. 
+9. The user's data is deleted
+
+
+Students who worked in the installation are Rodolfo Ocampo, Javier Cors, Rodrigo Calderón, Jerónimo Aranda, Fernacisco Velasquez and Jose Javier Villicaña. 
+
+The project requires a Raspberry Pi 4, a monitor and Raspberry Pi 4 camera. 
+
+To replicate this installation, you need to install the dependencies in the manual.txt file, and then clone this repository, and start a flask server with the following name: 
+
+
+
+# Cara a Cara (Español)
 
 En este repositorio encontrarás el código para replicar Cara a Cara. 
+
 
 Cara a Cara es una instalación desarollada por estudiantes de [Datalab ITAM](datalabitam.com), en colaboración con la organización [El Día Después](https://eldiadespues.mx/) y [Data Cívica](https://datacivica.org), y como parte del proyecto de tesis de Rodolfo Ocampo, inspirada en el proyecto ["Nivel de Confianza" de Rafael Lozano-Hemmer.](https://www.lozano-hemmer.com/level_of_confidence.php) 
 
@@ -23,6 +53,7 @@ En términos de hardware, el proyecto require de una Raspberry Pi, una pantalla 
 
 Para instalar las dependencias en el Raspberry Pi, corre en la terminal del RPi las líneas en el archvo manual.txt de este repositorio.
 
+Los estudiantes que participaron en este proyecto son: Rodolfo Ocampo, Javier Cors, Rodrigo Calderón, Jerónimo Aranda, Fernacisco Velasquez and Jose Javier Villicaña
 # Referencias útiles
 [Recognize faces on a Raspberry Pi w/ camera](https://github.com/ageitgey/face_recognition/blob/master/examples/facerec_on_raspberry_pi.py)
 
