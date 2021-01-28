@@ -1,6 +1,6 @@
 # Cara a Cara (English)
 
-This is the repository for the Cara a Cara (Face to Face) installation. 
+This is the repository for the Cara a Cara (Face to Face) installation [demo here](https://www.youtube.com/watch?v=jmWU0F__93A). 
 
 This installation was developed by students at [Datalab ITAM](datalabitam.com), with support from NGO's [El Día Después](https://eldiadespues.mx/) and [Data Cívica](https://datacivica.org), and as a part of Rodolfo Ocampo undegraduate thesis from ITAM. The installation was inspired by "Level of Confidence" by Lozano-Hemmer. (https://www.lozano-hemmer.com/level_of_confidence.php) 
 
@@ -31,10 +31,9 @@ flask run
 ```
 The project should now open in your browser in localhost.
 
-# Cara a Cara (Español)
+# Cara a Cara (Español) 
 
-En este repositorio encontrarás el código para replicar Cara a Cara. 
-
+En este repositorio encontrarás el código para replicar Cara a Cara [demo here](https://www.youtube.com/watch?v=jmWU0F__93A). 
 
 Cara a Cara es una instalación desarollada por estudiantes de [Datalab ITAM](datalabitam.com), en colaboración con la organización [El Día Después](https://eldiadespues.mx/) y [Data Cívica](https://datacivica.org), y como parte del proyecto de tesis de Rodolfo Ocampo, inspirada en el proyecto ["Nivel de Confianza" de Rafael Lozano-Hemmer.](https://www.lozano-hemmer.com/level_of_confidence.php) 
 
